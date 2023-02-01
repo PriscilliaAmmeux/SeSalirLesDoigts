@@ -1,0 +1,22 @@
+@use "../src/variables.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.home-title {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: variables.$calypso-color;
+}
+.home-presentation {
+  color: variables.$black-color;
+  font-size: 1.5rem;
+  background-color: variables.$grey-color;
+  margin-bottom: 1rem;
+}
