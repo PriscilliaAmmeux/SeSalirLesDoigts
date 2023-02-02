@@ -1,0 +1,9 @@
+@use "../src/variables.scss";
+
+.title-spring {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: variables.$beaver-color;
+  font-size: 2rem;
+}

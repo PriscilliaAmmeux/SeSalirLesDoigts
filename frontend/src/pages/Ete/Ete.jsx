@@ -19,20 +19,19 @@ export default function Ete() {
     <div>
       <NavBar />
       <Title />
+      <h1 className="title-summer">En été</h1>
       <div>
-        {activities !== 0 ? (
-          activities
+        {activities.length !== 0 ? (
+          <SwiperComponent>
+            <SwiperActivities activities={activities} />
+          </SwiperComponent>
         ) : (
           <div className="ete-contruction">
-            <p className="ete-contruction">Page en contruction</p>
+            <p className="ete-contruction">Page en construction</p>
             <img className="img-contruction" src={encours} alt="travaux" />
           </div>
         )}
       </div>
-
-      <SwiperComponent>
-        <SwiperActivities activities={activities} />
-      </SwiperComponent>
       <Footer />
     </div>
   );

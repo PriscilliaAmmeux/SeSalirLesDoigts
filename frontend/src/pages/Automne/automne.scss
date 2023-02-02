@@ -1,0 +1,9 @@
+@use "../src/variables.scss";
+
+.title-fall {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: variables.$beaver-color;
+  font-size: 2rem;
+}
