@@ -1,7 +1,6 @@
 ## Concept
 
 "Se salir les doigts" is a personal project representing children's activities sorted by season or by theme.
-Please do not fork or clone this project.
 
 ## Setup & Use
 
