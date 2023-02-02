@@ -5,6 +5,8 @@ Please do not fork or clone this project.
 
 ## Setup & Use
 
+Create a file .env in front and back. Use the .env.sample for to help you.
+
 ### Project Initialization
 
 - In VSCode, install plugins **Prettier - Code formatter** and **ESLint** and configure them
