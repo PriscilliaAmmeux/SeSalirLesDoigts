@@ -2,12 +2,17 @@ const express = require("express");
 
 const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
+const activitiesControllers = require("./controllers/activitiesControllers");
 
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
+router.get("/activitiesSpring", activitiesControllers.spring);
+router.get("/activitiesSummer", activitiesControllers.summer);
+router.get("/activitiesFall", activitiesControllers.fall);
+router.get("/activitiesWinter", activitiesControllers.winter);
+router.get("/activitiesOthers", activitiesControllers.others);
+
+router.get("/activities/:id", activitiesControllers.read);
+router.put("/activities/:id", activitiesControllers.edit);
+router.post("/activities", activitiesControllers.add);
+router.delete("/activities/:id", activitiesControllers.destroy);
 
 module.exports = router;

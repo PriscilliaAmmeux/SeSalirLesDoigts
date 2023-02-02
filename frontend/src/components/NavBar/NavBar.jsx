@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { BsFillSunFill, BsSnow2 } from "react-icons/bs";
-import { GiFireFlower } from "react-icons/gi";
-import { FaCanadianMapleLeaf } from "react-icons/fa";
+import { GiFallingLeaf, GiFireFlower } from "react-icons/gi";
 import { AiFillBulb, AiFillHome } from "react-icons/ai";
 import logo from "../../assets/logo.png";
 import "./navBar.scss";
@@ -19,7 +18,7 @@ export default function NavBar() {
       <ul className="main-nav-bar">
         <img className="logoNavBar" src={logo} alt="logo" />
         <NavLink
-          to="/home"
+          to="/"
           className="nav-links"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -52,7 +51,7 @@ export default function NavBar() {
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           <li className="nav-option">
-            <FaCanadianMapleLeaf />
+            <GiFallingLeaf />
             Automne
           </li>
         </NavLink>

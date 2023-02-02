@@ -8,7 +8,6 @@
   width: 100%;
   background-color: transparent;
   padding-top: 1rem;
-  position: fixed;
   padding-bottom: 1rem;
 }
 
@@ -27,14 +26,16 @@
   text-decoration: none;
   background-color: transparent;
   border-radius: 2.5rem;
-  padding: 2%;
+  padding: 1%;
   border: 1px solid variables.$calypso-color;
   color: variables.$black-color;
-  font-size: rem;
-  width: 7%;
+  font-size: 1rem;
+  width: 10%;
   &:hover {
     background-color: variables.$calypso-color;
+    color: variables.$grey-color;
   }
+  cursor: pointer;
 }
 
 .nav-option {

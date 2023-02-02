@@ -1,39 +1,26 @@
 import NavBar from "@components/NavBar/NavBar";
-import "./printemps.scss";
-// import { useEffect, useState } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination, Mousewheel, Keyboard, FreeMode } from "swiper";
-// /* eslint-disable import/no-unresolved */
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// /* eslint-enable import/no-unresolved */
-// import "./Swiper.scss";
+import SwiperActivities from "@components/SwiperActivities/SwiperActivities";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Swiper as SwiperComponent } from "swiper/react";
+import Footer from "@components/Footer/Footer";
+import Title from "@components/Title/Title";
 
 export default function Printemps() {
-  // const { activities, setActivities } = useState([]);
-  // useEffect(() => {
-  //   setActivities(activities);
-  // }, []);
+  const [activities, setActivities] = useState([]);
+  useEffect(() => {
+    axios.get(`http://localhost:5000/activitiesSpring`).then(({ data }) => {
+      setActivities(data);
+    });
+  }, []);
   return (
     <div>
       <NavBar />
-      {/* <Swiper
-        cssMode
-        pagination
-        mousewheel
-        keyboard
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="my-swiper"
-      >
-        {activities
-          .filter((activity) => )
-          .map((activity) => {
-            return (
-              <SwiperSlide className="home-youtube" key={} id={}> </SwiperSlide>
-            );
-          })}
-      </Swiper> */}
+      <Title />
+      <SwiperComponent>
+        <SwiperActivities activities={activities} />
+      </SwiperComponent>
+      <Footer />
     </div>
   );
 }
