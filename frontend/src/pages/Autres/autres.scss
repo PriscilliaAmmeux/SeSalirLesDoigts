@@ -1,0 +1,9 @@
+@use "../src/variables.scss";
+
+.title-all {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: variables.$beaver-color;
+  font-size: 2rem;
+}

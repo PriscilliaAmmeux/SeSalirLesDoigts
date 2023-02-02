@@ -4,11 +4,12 @@
   display: flex;
   align-items: flex-end;
   bottom: 0vh;
+  position: relative;
   width: 100vw;
   justify-content: space-around;
   align-items: center;
   background-color: variables.$calypso-color;
-  height: 10vh;
+  height: 20vh;
   color: variables.$grey-color;
   text-decoration: none;
 }

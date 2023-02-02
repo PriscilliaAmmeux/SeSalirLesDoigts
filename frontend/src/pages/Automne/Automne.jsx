@@ -5,6 +5,7 @@ import axios from "axios";
 import { Swiper as SwiperComponent } from "swiper/react";
 import Footer from "@components/Footer/Footer";
 import Title from "@components/Title/Title";
+import "./automne.scss";
 
 export default function Automne() {
   const [activities, setActivities] = useState([]);
@@ -17,6 +18,7 @@ export default function Automne() {
     <div>
       <NavBar />
       <Title />
+      <h1 className="title-fall">En automne</h1>
       <SwiperComponent>
         <SwiperActivities activities={activities} />
       </SwiperComponent>

@@ -1,3 +1,5 @@
+@use "../src/variables.scss";
+
 .img-construction {
   display: flex;
   justify-content: center;
@@ -10,4 +12,12 @@
   justify-content: center;
   text-align: center;
   margin: 1rem;
+}
+
+.title-summer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: variables.$beaver-color;
+  font-size: 2rem;
 }

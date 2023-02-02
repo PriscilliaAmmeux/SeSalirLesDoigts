@@ -5,6 +5,7 @@ import axios from "axios";
 import { Swiper as SwiperComponent } from "swiper/react";
 import Footer from "@components/Footer/Footer";
 import Title from "@components/Title/Title";
+import "./autres.scss";
 
 export default function Autres() {
   const [activities, setActivities] = useState([]);
@@ -17,6 +18,7 @@ export default function Autres() {
     <div>
       <NavBar />
       <Title />
+      <h1 className="title-all">Toute l'année</h1>
       <SwiperComponent>
         <SwiperActivities activities={activities} />
       </SwiperComponent>

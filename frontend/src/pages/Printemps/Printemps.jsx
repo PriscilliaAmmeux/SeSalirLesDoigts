@@ -5,6 +5,7 @@ import axios from "axios";
 import { Swiper as SwiperComponent } from "swiper/react";
 import Footer from "@components/Footer/Footer";
 import Title from "@components/Title/Title";
+import "./printemps.scss";
 
 export default function Printemps() {
   const [activities, setActivities] = useState([]);
@@ -17,6 +18,7 @@ export default function Printemps() {
     <div>
       <NavBar />
       <Title />
+      <h1 className="title-spring">Au printemps</h1>
       <SwiperComponent>
         <SwiperActivities activities={activities} />
       </SwiperComponent>
