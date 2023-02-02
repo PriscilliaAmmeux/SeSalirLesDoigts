@@ -1,0 +1,51 @@
+@use "../src/variables.scss";
+
+.swiper-image {
+  margin-top: 1rem;
+  height: 15rem;
+  cursor: pointer;
+}
+.card {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.swiper-title {
+  color: variables.$calypso-color;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.swiper-description {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-swiper {
+  width: 80vw;
+  .swiper-button-next {
+    color: variables.$calypso-color;
+    position: absolute;
+    top: 15vh;
+  }
+  .text-bold {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .swiper-button-prev {
+    color: variables.$calypso-color;
+    position: absolute;
+    top: 15vh;
+  }
+}
+.swiper-swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

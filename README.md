@@ -1,9 +1,11 @@
 ## Concept
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+"Se salir les doigts" is a personal project representing children's activities sorted by season or by theme.
 
 ## Setup & Use
+
+Create a file .env in front and back. Use the .env.sample for to help you.
+To do a npm run setup and npm run dev.
 
 ### Project Initialization
 
@@ -33,3 +35,19 @@ It's pre-configured with a set of tools which'll help students produce industry-
 - _Prettier_ : "Quality of code" tool as well, focuses on the styleguide
 - _ Airbnb Standard_ : One of the most known "standards", even though it's not officially linked to ES/JS
 - _Nodemon_ : Allows to restart the server everytime a .js file is udated
+
+### Dependencies
+
+- "axios": Used for making HTTP requests.
+- "node-sass": Used for compiling SCSS files into CSS.
+- "prop-types": Used for checking the data types of React component props.
+- "react": A JavaScript library for building user interfaces.
+- "react-dom": Used for rendering React components into the DOM.
+- "react-icons": A library of icons for use in React applications.
+- "react-router-dom": Used for routing in React applications.
+- "swiper": A library for creating touch-based sliders.
+- "template-fullstack": A pre-built or pre-configured setup for building full-stack web applications.
+- "cors": Used for handling Cross-Origin Resource Sharing (CORS) requests.
+- "dotenv": Used for loading environment variables from a .env file.
+- "express": A fast, minimalist web framework for Node.js.
+- "mysql2": A library for performing queries and managing data in a MySQL database.

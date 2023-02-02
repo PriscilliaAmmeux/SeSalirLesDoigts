@@ -1,0 +1,24 @@
+@use "../src/variables.scss";
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  bottom: 0vh;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  background-color: variables.$calypso-color;
+  height: 10vh;
+  color: variables.$grey-color;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+  color: variables.$grey-color;
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    display: none;
+  }
+}
