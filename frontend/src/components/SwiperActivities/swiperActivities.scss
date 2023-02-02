@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 .card {
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -24,7 +24,6 @@
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
 }
 
 .my-swiper {
@@ -32,7 +31,7 @@
   .swiper-button-next {
     color: variables.$calypso-color;
     position: absolute;
-    top: 25vh;
+    top: 15vh;
   }
   .text-bold {
     font-weight: bold;
@@ -42,7 +41,7 @@
   .swiper-button-prev {
     color: variables.$calypso-color;
     position: absolute;
-    top: 25vh;
+    top: 15vh;
   }
 }
 .swiper-swiper {

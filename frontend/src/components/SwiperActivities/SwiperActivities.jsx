@@ -14,6 +14,14 @@ function SwiperActivities({ activities }) {
       <Swiper
         slidesPerView={3}
         spaceBetween={8}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          851: {
+            slidesPerView: 3,
+          },
+        }}
         pagination={{
           clickable: true,
         }}

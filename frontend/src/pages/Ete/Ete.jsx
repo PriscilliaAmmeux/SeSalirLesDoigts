@@ -5,6 +5,8 @@ import axios from "axios";
 import { Swiper as SwiperComponent } from "swiper/react";
 import Footer from "@components/Footer/Footer";
 import Title from "@components/Title/Title";
+import encours from "../../assets/encours.png";
+import "./ete.scss";
 
 export default function Ete() {
   const [activities, setActivities] = useState([]);
@@ -17,6 +19,17 @@ export default function Ete() {
     <div>
       <NavBar />
       <Title />
+      <div>
+        {activities !== 0 ? (
+          activities
+        ) : (
+          <div className="ete-contruction">
+            <p className="ete-contruction">Page en contruction</p>
+            <img className="img-contruction" src={encours} alt="travaux" />
+          </div>
+        )}
+      </div>
+
       <SwiperComponent>
         <SwiperActivities activities={activities} />
       </SwiperComponent>

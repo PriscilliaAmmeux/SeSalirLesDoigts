@@ -1,11 +1,11 @@
-import { AiFillInstagram } from "react-icons/ai";
+import { RiInstagramFill } from "react-icons/ri";
 import "./footer.scss";
 
 export default function Footer() {
   return (
     <div className="footer">
       <a className="link" href="https://www.instagram.com/se_salir_les_doigts/">
-        Rejoignez moi sur Instagram {AiFillInstagram}
+        Rejoignez moi sur Instagram {RiInstagramFill}
       </a>
 
       <div>Checkpoint 4 - WCS</div>
