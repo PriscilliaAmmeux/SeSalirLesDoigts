@@ -5,6 +5,7 @@
 ## Setup & Use
 
 Create a file .env in front and back. Use the .env.sample for to help you.
+To do a npm run setup and npm run dev.
 
 ### Project Initialization
 
